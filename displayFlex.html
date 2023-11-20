@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex </title>
+    <style>
+        .flexContainer {
+            background-color: #dce6f5;
+            display: flex;  
+            padding: 1%;   border: 1px solid black;
+        }
+        .flexitem {
+            flex-grow: 1;  flex-basis: 200px;  height: 100px;  
+            margin: 0.5rem;  padding: 0.5rem; border: 1px solid black;
+            border-radius: 5rem;
+        }
+        .box:nth-of-type(odd) {   background-color: #998888cc;      }
+
+        .box:nth-of-type(even) {  background-color: #f13636;     }
+    </style>
+</head>
+<body>
+    <h1>Display Flex Example</h1>
+    <div class="flexContainer">
+        <div class="flexitem box"></div>
+        <div class="flexitem box"></div>
+        <div class="flexitem box"></div>
+        <div class="flexitem box"></div>
+    </div>
+</body>
+</html>
