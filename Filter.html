@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Filter </title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        img {
+            width: 48vh;
+            height: 30vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h1>Image Filter Example </h1>
+        </div>
+    <div class="row">
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter: blur(5px);" alt="">
+            <p class="mt-2 p-2 bg-primary text-center text-black fw-medium"> style="filter: blur(5px);" </p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter: brightness(40%);"
+                alt="">
+            <p class="mt-2 p-2 bg-info text-center text-black fw-medium">style="filter: brightness(40%);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter:contrast(100%)" alt="">
+            <p class="mt-2 p-2 bg-secondary text-center text-black fw-medium">style="filter: contrast(100%);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350"
+                style="filter: drop-shadow(2px 4px 6px red);" alt="">
+            <p class="mt-2 p-2 bg-danger text-center text-black fw-medium">style="filter: contrast(100%);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter: grayscale(100%);" alt="">
+            <p class="mt-2 p-2 bg-secondary text-center text-black fw-medium">style="filter: grayscale(100%);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter: hue-rotate(28deg);" alt="">
+            <p class="mt-2 p-2 bg-primary text-center text-black fw-medium">style="filter:  hue-rotate(28deg);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter: opacity(0.5);" alt="">
+            <p class="mt-2 p-2 bg-info text-center text-black fw-medium">style="filter: opacity(0.5);"</p>
+        </div>
+        <div class="col-md-3"> <img src="/public/images/image1.jpg" height="350" style="filter:saturate(4) ;" alt="">
+            <p class="mt-2 p-2 bg-danger text-center text-black fw-medium">style="filter: saturate(4);"</p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
