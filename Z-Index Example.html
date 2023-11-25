@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .card-red {
+            background-color: #EEF296;
+            margin-left: 20px;
+            margin-top: 20px;
+            z-index: 2;
+        }
+        .card-blue {
+            background-color: #FF8F8F;
+            margin-left: 40px;
+            margin-top: 40px;
+            z-index: 1;
+        }
+        .card-yellow {
+            background-color: #9ade7b;
+            margin-top: 60px;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body style="background-color: #EEF5FF;">
+    <span style="text-align: center; font-size: larger; 
+    font-weight: bold;" > Z-Index Example </span>
+    <div class="card-red"> </div>
+    <div class="card-blue"> </div>
+    <div class="card-yellow"> </div>
+   
+</body>
+
+</html>
