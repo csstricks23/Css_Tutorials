@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Part -1 (Display-Grid) </title>
+    <style>
+        .griditem {
+            height: 100px;
+            width: 100px;
+            background-color: #7babc7;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 5px;
+        }
+        p {
+            border: 1px solid black;
+            background-color: #9ade7b;
+            padding: 10px;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+h1{
+    text-align: center; margin:20px; }
+        
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <h1>Border Radius</h1>
+    <div class="container" style="border: 1px solid gray;">
+        <div class="row" style="background-color: bisque;">
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 0px;  "> </div>
+                <p> border-radius: 0px;  </p>
+            </div>
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 20px;  "> </div>
+                <p> border-radius: 20px; </p>
+            </div>
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 50%;"> </div>
+                <p>border-radius: 50%;</p>
+            </div>
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 60px 70px 40px 140px; width: 100px;"> </div>
+                <p> border-radius: 60px 70px 40px 140px; </p>
+            </div>
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 30% 12%;  "> </div>
+                <p> border-radius: 30% 12%; </p>
+            </div>
+            <div class="col-md-2">
+                <div class="griditem" style="border-radius: 60% 10% 70% 10%; "> </div>
+                <p> border-radius: 60% 10% 70% 10% </p>
+            </div>
+            
+        </div>
+</body>
+
+</html>
