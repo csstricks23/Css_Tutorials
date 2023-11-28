@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grid Box</title>
+    <style>
+        body{
+            background-image: url(./public/images/maxresdefault.jpg);
+            background-repeat: repeat;
+        }
+        section {
+            display: grid;
+             grid-template-columns: repeat(3,1fr);
+             gap: 20px;
+        }
+        div {
+            border: 1px solid #7890fb;
+            height: 50px;   width: 100px;   margin: 10px; font-size: 45px;
+            padding: 25px; text-align: center;  background-color: #075dbe;
+           
+        }
+        @media(max-width:768px){
+            section{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(max-width:480px){
+            section{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+</body>
+</html>
