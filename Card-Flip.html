@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Flip</title>
+    <style>
+        .card {
+            width: 350px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        .card-body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+        }
+        .card:hover .card-body {
+            transform: rotateY(180deg);
+            transition: transform 0.5s;
+        }
+
+        .front, .back {
+            position: absolute;
+            height: 100%;  width: 100%;
+            font-weight: bolder;
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+            line-height: 200px;
+            text-align: center;
+            font-size: 60px;
+            border-radius: 50px;
+            backface-visibility: hidden;
+            color: #fff;
+        }
+        .back {
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="front">
+                Front
+            </div>
+            <div class="back">
+                Back
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
