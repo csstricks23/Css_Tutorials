@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <style>
+      body {
+        background: radial-gradient(circle at top right, #16222a, #3a6073);
+        text-align: center; font-size: 20px;  color: rgba(255, 255, 255, 0.8);
+      }
+      [class*="loader1"] {
+        display: inline-block;
+        width: 5em;
+        height: 5em;
+        vertical-align: middle;
+      }
+      .loader1 {
+        border: 0.6em dotted currentcolor; 
+        border-radius: 50%;
+        -webkit-animation: 2s loader1 linear infinite;
+        animation: 2s loader1 linear infinite;
+      }
+      @keyframes loader1 {
+        0% {  transform: rotate(0deg);     }
+
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS LOADERS</h1>
+    <div class="box">
+      <div class="loader1"></div>  Loading..
+    </div>
+  </body>
+</html>
