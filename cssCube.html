@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - CUBE</title>
+    <style>
+        div {
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            margin: 300px 550px 0px 550px;
+            animation: effect 5s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            opacity: 0.5;
+        }
+        .a {
+            background-color: lightslategrey;
+        }
+        .b {
+            transform: translate(50px,-150px) skewX(-45deg) scale(1,0.5);
+            background-color: orangered;
+        }
+        .c {
+            transform:translate(150px,-50px)skewY(-45deg)scaleX(0.5);
+            background-color: greenyellow;
+        }
+        .d {
+            transform:translate(100px,-100px);
+            background-color: aqua;
+        }
+        .e {
+            transform: translate(-50px,-50px) skewY(-45deg)scale(0.5,1);
+            background-color: black;
+        }
+        .f {
+            transform:translate(50px,50px)skewX(-45deg)scale(1,0.5);
+            background-color: violet;
+        }
+        @keyframes effect
+        {
+            from {
+                border: 1px solid white;
+            }
+            to {
+                height: 200px;
+                width: 200px;
+                border: 2px solid black;
+            }
+        }
+        h1{text-align: center;}
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - CUBE Example Using keyframes</h1>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+</body>
+</html>
