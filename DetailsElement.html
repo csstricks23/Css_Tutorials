@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Element Example</title>
+    <style>
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 0.5em 0.5em 0;
+        }
+
+        details>p {
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+        }
+
+        details[open] {
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Details Element Example</h1>
+    <details>
+        <summary>MERN Stack</summary>
+        <ol>
+            <li>Mongodb</li>
+            <li>Express js</li>
+            <li>react js</li>
+            <li>Node js</li>
+        </ol>
+    </details>
+</body>
+
+</html>
