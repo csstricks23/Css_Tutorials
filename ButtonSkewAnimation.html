@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Skew Animation</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background: #d342923a;
+        }
+        .button {
+            color: #fff;
+            background: #229ee6;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border: 0;
+            outline: 0;
+            font-size: 1.1rem;
+            padding: 12px 35px;
+            display: inline-block;
+            transform: skew(-21deg);
+        }
+        .button:visited {
+            color: #fff;
+        }
+        .button:hover {
+            background: #c51289;
+        }
+        .button>span {
+            display: inline-block;
+            transform: skew(21deg);
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Button Skew Animation</h3>
+    <div class="container">
+        <a href="#" class="button"><span>Next !!</span> </a>
+    </div>
+</body>
+
+</html>
