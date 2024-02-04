@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Circle</title>
+    <style>
+        .main-circle {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+            background-color: blue;
+            margin: 250px;
+        }
+        .circle1,  .circle2,  .circle3,   .circle4,
+        .circle5,.circle6,.circle7,.circle8 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+            background-color: rgb(212, 255, 0);
+            cursor: pointer;
+        }
+
+        .circle1 {  background-color: #ff0055; }
+        .circle2 {  background-color: #00ff9d; }
+        .circle3 { background-color:  #c8ff00;  }
+        .circle4 {  background-color: #ff7300; }
+        .circle5 {  background-color: #0011ff; }
+        .circle6 {  background-color: #d40b0b; }
+        .circle7 { background-color:  #60100B;  }
+        .circle8 {  background-color: #B43757; }
+        
+        .main-circle:hover .circle1 {transform: rotate(360deg) translateY(300px);}
+
+        .main-circle:hover .circle2 {transform: rotate(360deg) translateY(-300px);}
+
+        .main-circle:hover .circle3 {transform: rotate(360deg) translateX(-300px);}
+
+        .main-circle:hover .circle4 {transform: rotate(360deg) translateX(300px);}
+
+        .main-circle:hover .circle5 {transform: rotate(360deg) translateX(300px) translateY(300);}
+
+        .main-circle:hover .circle6 {transform: rotate(360deg) translateX(-300px) translateY(-300px);}
+
+        .main-circle:hover .circle7 {transform: rotate(360deg) translateX(-300px) translateY(300px);}
+
+        .main-circle:hover .circle8 {transform: rotate(360deg) translateX(300px) translateY(-300px);}
+    </style>
+</head>
+
+<body>
+    <div class="main-circle">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+        <div class="circle7"></div>
+        <div class="circle8"></div>
+    </div>
+</body>
+
+</html>
