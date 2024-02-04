@@ -6,20 +6,21 @@
     <title>Rotate Circle</title>
     <style>
         .main-circle {
-            width: 150px;
-            height: 150px;
+            width: 80px;
+            height: 80px;
             border: 1px solid black;
             border-radius: 50%;
             position: absolute;
             transition: 1s;
-            background-color: blue;
-            margin: 250px;
+            cursor: pointer;
+            background-color: #0b0b0c;
+            margin: 20%
         }
-        .circle1,  .circle2,  .circle3,   .circle4,
+        .circle1,.circle2,.circle3,.circle4,
         .circle5,.circle6,.circle7,.circle8 {
             position: absolute;
-            width: 150px;
-            height: 150px;
+            width: 80px;
+            height: 80px;
             border: 1px solid black;
             border-radius: 50%;
             position: absolute;
@@ -28,8 +29,8 @@
             cursor: pointer;
         }
 
-        .circle1 {  background-color: #ff0055; }
-        .circle2 {  background-color: #00ff9d; }
+        /* .circle1 {  background-color: #ff0055; }*/
+        .circle2 {  background-color: #00ff9d; } 
         .circle3 { background-color:  #c8ff00;  }
         .circle4 {  background-color: #ff7300; }
         .circle5 {  background-color: #0011ff; }
@@ -37,21 +38,29 @@
         .circle7 { background-color:  #60100B;  }
         .circle8 {  background-color: #B43757; }
         
-        .main-circle:hover .circle1 {transform: rotate(360deg) translateY(300px);}
+        .main-circle:hover .circle1 
+        {transform: rotate(360deg) translateY(300px);}
 
-        .main-circle:hover .circle2 {transform: rotate(360deg) translateY(-300px);}
+        .main-circle:hover .circle2 
+        {transform: rotate(360deg) translateY(-300px);}
 
-        .main-circle:hover .circle3 {transform: rotate(360deg) translateX(-300px);}
+        .main-circle:hover .circle3
+        {transform: rotate(360deg) translateX(-300px);}
 
-        .main-circle:hover .circle4 {transform: rotate(360deg) translateX(300px);}
+        .main-circle:hover .circle4
+        {transform: rotate(360deg) translateX(300px);}
 
-        .main-circle:hover .circle5 {transform: rotate(360deg) translateX(300px) translateY(300);}
+        .main-circle:hover .circle5
+        {transform: rotate(360deg) translateX(300px) translateY(300px);}
 
-        .main-circle:hover .circle6 {transform: rotate(360deg) translateX(-300px) translateY(-300px);}
+        .main-circle:hover .circle6 
+         {transform: rotate(360deg) translateX(-300px) translateY(-300px);}
 
-        .main-circle:hover .circle7 {transform: rotate(360deg) translateX(-300px) translateY(300px);}
+        .main-circle:hover .circle7
+         {transform: rotate(360deg) translateX(-300px) translateY(300px);}
 
-        .main-circle:hover .circle8 {transform: rotate(360deg) translateX(300px) translateY(-300px);}
+        .main-circle:hover .circle8
+        {transform: rotate(360deg) translateX(300px) translateY(-300px);}
     </style>
 </head>
 
