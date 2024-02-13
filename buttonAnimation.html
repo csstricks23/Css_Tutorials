@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Html -Css Button Animation</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            background: black;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            font-size: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 10px 30px;
+            border: 2px solid #ff8800;
+            background-color: transparent;
+            color: #ff8800;
+        }
+        button:hover{
+            color: #9dff00;
+            border: 2px solid #6f00ff;
+            animation: shake 0.3s linear infinite;
+        }
+        @keyframes shake {
+            0%{rotate: 30deg;}
+            25%{rotate: -30deg;}
+            100%{rotate: 30deg;}
+        }
+    </style>
+</head>
+<body>
+    <button>Hover Me</button>
+</body>
+</html>
