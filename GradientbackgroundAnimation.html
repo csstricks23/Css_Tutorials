@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Animation</title>
+    <style>
+        .animatedBackground{
+            background: linear-gradient(to left,
+            #833ab4,#fd1d1d,#fcb045);
+            background-size: 400% 400%;
+            animation: animatedBackground 10s infinite ease-in-out;
+        }
+        @keyframes animatedBackground {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        h1{ color: white; text-align: center;}
+    </style>
+</head>
+<body class="animatedBackground">
+    <h1>Gradient Background Animation</h1>
+</body>
+</html>
