@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loaders</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        .loader {
+            --AnimationSpeed: 0.9s;
+            --gap: 6px;
+            --color-1: #0202c7;
+            --color-2: #cf1111;
+            --color-3: #ffff00;
+            --color-4: #ffc0cb;
+            --color-5: #008000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            gap: 6px;
+            height: 100px;
+        }
+        .loader span {
+            width: 4px;
+            height: 50px;
+            background: var(--color-1);
+            animation: scale var(--AnimationSpeed) ease-in-out infinite;
+        }
+        .loader span:nth-child(2) {
+            background: var(--color-2);
+            animation-delay: -0.8s;
+        }
+        .loader span:nth-child(3) {
+            background: var(--color-3);
+            animation-delay: -0.7s;
+        }
+        .loader span:nth-child(4) {
+            background: var(--color-4);
+            animation-delay: -0.6s;
+        }
+        .loader span:nth-child(5) {
+            background: var(--color-5);
+            animation-delay: -0.5s;
+        }
+        @keyframes scale {
+            0%,  40%,  100% {  transform: scaleY(0.05); }
+            20% { transform: scaleY(1);  }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>  <h1>CSS LOADER</h1>
+    <div class="container">
+      
+        <div class="loader">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </div>
+    </div>
+</body>
+
+</html>
