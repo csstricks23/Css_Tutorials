@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosul With Hover Effet with transition </title>
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.918);
+           
+        }
+        .slide img {
+            filter: saturate(50%);
+            width: 10%;
+            border: 2px solid whitesmoke;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: all ease 0.4s;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .slide img:hover {
+            filter: saturate(100%);
+            width: 65%;
+        }
+        h3{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Carosul With Hover Effet with transition </h3>
+    <div class="slide">
+        <img src="public/images/Carosul/C-02.jpg">
+        <img src="public/images/Carosul/C-03.jpg">
+        <img src="public/images/Carosul/C-04.jpg">
+        <img src="public/images/Carosul/C-05.jpg">
+    </div>
+</body>
+
+</html>
