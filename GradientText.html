@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Text Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+        p {
+            font-size: 54px;
+            font-weight: 900;
+            background: linear-gradient(to right,
+            #cd8053 20%,
+            #00affa 30%,
+            #cd0112 70%,
+            #764ada 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: ShineMe 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes ShineMe {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            Animated Gradient Text
+        </p>
+    </div>
+</body>
+
+</html>
